@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "client": "cd client && npm run serve",
+    "server": "cd server && npm run serve",
+    "serve": "concurrently \"npm run client\" \"npm run server\""
   },
   "repository": {
     "type": "git",
