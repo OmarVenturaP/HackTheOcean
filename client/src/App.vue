@@ -23,7 +23,7 @@
           Mi Cuenta
         </router-link></a></li>
 
-        <li><a href="#"><router-link to="/empresas" class="a-item">
+        <li><a href="#"><router-link to="/enterprises" class="a-item">
           Empresas
         </router-link></a></li>
 

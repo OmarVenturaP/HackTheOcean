@@ -5,6 +5,7 @@ import DonacionesView from '../views/DonacionesView.vue';
 import InfoView from '../views/InfoView.vue';
 import CuentaView from '../views/CuentaView.vue';
 import CreateAccountView from '../views/CreateAccountView.vue';
+import EnterpriseView from '../views/EnterpriseView.vue';
 
 const routes = [
   {
@@ -35,6 +36,11 @@ const routes = [
     path: '/createaccount',
     name: 'createaccount',
     component: CreateAccountView,
+  },
+  {
+    path: '/enterprises',
+    name: 'enterprises',
+    component: EnterpriseView,
   },
 ];
 
