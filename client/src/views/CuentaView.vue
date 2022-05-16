@@ -1,5 +1,5 @@
 <template>
-    
+
     <div>
 
     <main>
@@ -10,7 +10,7 @@
         </button>
 
         <div class="reports">
-        
+
             <h2>Reportes Realizados</h2>
             <div class="report1" id="report1">
                 <h4>Reporte 1</h4>
@@ -30,7 +30,7 @@
             </div>
         </div>
     </main>
-    
+
     <footer>
         <section>
             <a href="#homepage">Home</a>
@@ -45,8 +45,8 @@
 
 <script>
 export default {
-    name: 'CuentaView'
-}
+  name: 'CuentaView',
+};
 </script>
 
 <style scoped>
@@ -130,7 +130,7 @@ footer{
     bottom: 0;
     justify-content: space-between;
     padding: 0 25px;
-}   
+}
 footer section{
     float: right;
 }

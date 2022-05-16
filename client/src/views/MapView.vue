@@ -5,10 +5,10 @@
       <div class="reportform">
         <form action="Enviar" class="formReport">
           <section class="formReport">
-            <label for="propiedad" name="propiedad" id="propiedad" class="propiedad">Propiedad: </label>
+            <label for="propiedad" name="propiedad" id="propiedad" class="propiedad">Propiedad:</label>
             <input type="text" name="propiedad" id="propiedad" class="propiedad" placeholder="Propiedad (Pública o Privada)">
           </section>
-          <section class="formReport"> 
+          <section class="formReport">
             <label for="direccion" name="direccion" id="direccion" class="direccion">Dirección: </label>
             <input type="text" name="direccion" id="direccion" class="direccion" placeholder="Dirección">
           </section>
@@ -35,16 +35,12 @@
           </section>
         </form>
       </div>
-      
 
-      
     </main>
 
     <div id="map">
       <MapComponent/>
     </div>
-
-
 
   </div>
 
@@ -60,15 +56,15 @@
 
 <script>
 // @ is an alias to /src
-import MapComponent from '@/components/MapComponent.vue'
+import MapComponent from '@/components/MapComponent.vue';
+
 export default {
   name: 'MapView',
   components: {
     MapComponent,
-}
-}
+  },
+};
 </script>
-
 
 <style  scoped>
 /*Paleta de Colores*/
@@ -116,7 +112,7 @@ footer{
     bottom: 0;
     justify-content: space-between;
     padding: 0 25px;
-}  
+}
 footer section{
     float: right;
 }
@@ -217,12 +213,12 @@ nav > ul > li > a:active {
 .create:visited {
     color:rgba(255, 255, 255, 0.9);
     text-shadow: 3px 5px 5px gainsboro;
-    
+
 }
 main button:hover{
     box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, .5);
     transition: box-shadow 0.3s ease;
-} 
+}
 /*index.html*/
 .header {
     position: relative;
@@ -412,12 +408,12 @@ main > section > video {
     width: 400px;
     margin: 0 auto;
 }
-/* Agregado de estilos para la seccion de infromacion, reporte y footer asi como 
+/* Agregado de estilos para la seccion de infromacion, reporte y footer asi como
 animaciones de hover y transiciones*/
 section button:hover{
     box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, .5);
     transition: box-shadow 0.3s ease;
-}   
+}
 footer{
     background-color: var(--color-principal);
     height: 55px;
@@ -427,7 +423,7 @@ footer{
     bottom: 0;
     justify-content: space-between;
     padding: 0 25px;
-}     
+}
 footer section{
     float: right;
 }

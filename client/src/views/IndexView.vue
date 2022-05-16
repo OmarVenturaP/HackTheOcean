@@ -8,7 +8,7 @@
         <button class="buttonHome">
           <a href="#">HOME</a>
         </button>
-      </section>   
+      </section>
 
       <p id="divisor"></p>
 
@@ -24,17 +24,17 @@
                 <a href="#divisor2"><i class="fa-solid fa-angle-down divisor2" ></i></a>
             </div>
         </div>
-        
+
         <p id="divisor2"></p>
 
         <div class="secciones" id="secciones">
           <div class="seccion" id="seccion1">
             <h3>Problematica</h3>
-            <p id="problemtext">Actualmente los metodos para el reporte de sargazo son ya sea a los numeros telefonico 
-              de la secretaria de marina 01 800 62 74 621 o mediante redes sociales en las cuales la poblacion general 
-              realiza presion a gobierno para su recoleccion y eliminacion sin aprovechar el material la propuesta 
-              es mediante la pagina centralizar las denuncias de sargazo y que estas puedan llegar a empresas privadas 
-              las cuales se encarguen de la remocion y aprovechamiento del sargazo si estas no pudieran recolectarlo el 
+            <p id="problemtext">Actualmente los metodos para el reporte de sargazo son ya sea a los numeros telefonico
+              de la secretaria de marina 01 800 62 74 621 o mediante redes sociales en las cuales la poblacion general
+              realiza presion a gobierno para su recoleccion y eliminacion sin aprovechar el material la propuesta
+              es mediante la pagina centralizar las denuncias de sargazo y que estas puedan llegar a empresas privadas
+              las cuales se encarguen de la remocion y aprovechamiento del sargazo si estas no pudieran recolectarlo el
               reporte pasaria a gobierno para su recoleccion y eliminacion</p>
           </div>
         </div>
@@ -56,14 +56,9 @@
                 <a href="./../views/donations.html">DONACIONES</a><!--se agrego esta linea-->
             </button><!--se agrego esta linea-->
         </div>
-
-
         <div class="seccion" id="seccion4">
             <h3>Información adicional</h3>
-            <p id="aditionalinfo">Algunas recomendaciones para abordar el tema del sargazo son: robustecer la cooperación internacional; garantizar la suficiencia presupuestal
-                para atender el problema de las arribazones; fortalecer a los centros de
-                investigación; elaborar la legislación correspondiente; crear un programa
-                integral de aprovechamiento; así como impulsar la participación del gobierno, el sector privado y la academia.
+            <p id="aditionalinfo">Algunas recomendaciones para abordar el tema del sargazo son: robustecer la cooperación internacional; garantizar la suficiencia presupuestal para atender el problema de las arribazones; fortalecer a los centros de investigación; elaborar la legislación correspondiente; crear un programa integral de aprovechamiento; así como impulsar la participación del gobierno, el sector privado y la academia.
             </p>
             <button>
                 <a href="#">INFORMACION</a>
@@ -81,31 +76,24 @@
 
         </section>
     </main>
-
-    
     <footer>
+        <section>
+            <a href="#">Home</a>
+            <a href="=mailto:sargassum@gmail.com">Correo de contacto</a>
+        </section>
 
-      <section>
-        <a href="#">Home</a>
-        <a href="=mailto:sargassum@gmail.com">Correo de contacto</a>
-      </section>
-
-      <p>Copyright 2022</p>
+        <p>Copyright 2022</p>
 
     </footer>
-    
-  </div>
+
+</div>
 </template>
-
-
 <script>
 // @ is an alias to /src
 export default {
-  name: 'IndexView'
-}
+  name: 'IndexView',
+};
 </script>
-
-
 <style scoped>
 /*
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -113,7 +101,7 @@ export default {
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css"/> 
+    <link rel="stylesheet" href="./style.css"/>
 */
 /*Paleta de Colores*/
 * {
@@ -170,12 +158,12 @@ input {
 .create:visited {
     color:rgba(255, 255, 255, 0.9);
     text-shadow: 3px 5px 5px gainsboro;
-    
+
 }
 main button:hover{
     box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, .5);
     transition: box-shadow 0.3s ease;
-} 
+}
 /*index.html*/
 .header {
     position: relative;
@@ -365,12 +353,12 @@ main > section > video {
     width: 400px;
     margin: 0 auto;
 }
-/* Agregado de estilos para la seccion de infromacion, reporte y footer asi como 
+/* Agregado de estilos para la seccion de infromacion, reporte y footer asi como
 animaciones de hover y transiciones*/
 section button:hover{
     box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, .5);
     transition: box-shadow 0.3s ease;
-}   
+}
 footer{
     background-color: var(--color-principal);
     height: 55px;
@@ -380,7 +368,7 @@ footer{
     bottom: 0;
     justify-content: space-between;
     padding: 0 25px;
-}     
+}
 footer section{
     float: right;
 }

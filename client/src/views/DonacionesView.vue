@@ -10,7 +10,7 @@
                 <input type="text" name="nombretarjeta" id="nombretarjeta" placeholder="Nombre del Propietario">
             </section>
 
-            <section> 
+            <section>
                 <label for="dirección" name="dirección">Dirección: </label>
                 <input type="text" name="dirección" id="dirección" placeholder="Dirección">
             </section>
@@ -49,7 +49,7 @@
 
         </form>
       </div>
-      
+
     </main>
     <footer>
       <section>
@@ -60,13 +60,13 @@
     </footer>
 
     </div>
-    
+
 </template>
 
-    <script>
+<script>
 export default {
-  name: 'DonacionesView'
-}
+  name: 'DonacionesView',
+};
 </script>
 
 <style scoped>
@@ -109,7 +109,7 @@ footer{
     bottom: 0;
     justify-content: space-between;
     padding: 0 25px;
-}     
+}
 footer section{
     float: right;
 }
@@ -211,12 +211,12 @@ nav > ul > li > a:active {
 .create:visited {
     color:rgba(255, 255, 255, 0.9);
     text-shadow: 3px 5px 5px gainsboro;
-    
+
 }
 main button:hover{
     box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, .5);
     transition: box-shadow 0.3s ease;
-} 
+}
 /*index.html*/
 .header {
     position: relative;
@@ -406,10 +406,10 @@ main > section > video {
     width: 400px;
     margin: 0 auto;
 }
-/* Agregado de estilos para la seccion de infromacion, reporte y footer asi como 
+/* Agregado de estilos para la seccion de infromacion, reporte y footer asi como
 animaciones de hover y transiciones*/
 section button:hover{
     box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, .5);
     transition: box-shadow 0.3s ease;
-}   
+}
 </style>

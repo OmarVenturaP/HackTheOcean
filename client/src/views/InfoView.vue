@@ -70,15 +70,14 @@
             <p>Copyright 2022</p>
     </footer>
 
-
     </div>
 
 </template>
 
 <script>
 export default {
-    name: 'InfoView'
-}
+  name: 'InfoView',
+};
 </script>
 
 <style scoped>
@@ -100,7 +99,7 @@ footer{
     bottom: 0;
     justify-content: space-between;
     padding: 0 25px;
-}  
+}
 footer section{
     float: right;
 }
