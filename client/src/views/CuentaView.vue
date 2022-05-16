@@ -6,7 +6,11 @@
         <section id="espacio">' '</section><!--para crear espacio-->
         <h1 class="h1">Crear cuenta</h1>
         <button>
-            <a href="./createaccount.html">Crear cuenta</a>
+            <a href=""> 
+                <router-link to="/createaccount">
+                Crear cuenta 
+                </router-link>
+                </a>
         </button>
 
         <div class="reports">
