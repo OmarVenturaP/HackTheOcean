@@ -1,8 +1,37 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+
+      <ul>
+
+        <li><router-link to="/" class="a-item"><a href="#" class="">
+          Home
+        </a></router-link></li>
+
+        <li> <router-link to="/report" class="a-item"><a href="#">
+          Reporte
+        </a></router-link></li>
+
+        <li><a href="#"><router-link to="/donaciones" class="a-item">
+          Donaciones
+        </router-link></a></li>
+
+        <li><a href="#"><router-link to="/info" class="a-item">
+          Información Adicional
+        </router-link></a></li>
+
+        <li><a href="#"><router-link to="/account" class="a-item">
+          Mi Cuenta
+        </router-link></a></li>
+
+        <li><a href="#"><router-link to="/empresas" class="a-item">
+          Empresas
+        </router-link></a></li>
+
+        <i class="fa-solid fa-bars navIcon"></i>
+        <i class="fa-solid fa-x navIcon"></i>
+
+      </ul>
+    </nav>
   <router-view/>
 </template>
 
