@@ -4,6 +4,7 @@ import IndexView from '../views/IndexView.vue';
 import DonacionesView from '../views/DonacionesView.vue';
 import InfoView from '../views/InfoView.vue';
 import CuentaView from '../views/CuentaView.vue';
+import CreateAccountView from '../views/CreateAccountView.vue';
 
 const routes = [
   {
@@ -33,8 +34,8 @@ const routes = [
   {
     path: '/createaccount',
     name: 'createaccount',
-    component: CreateAccountView
-  }
+    component: CreateAccountView,
+  },
 ];
 
 const router = createRouter({
