@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/OmarVenturaP/HackTheOcean/issues"
   },
-  "homepage": "https://github.com/OmarVenturaP/HackTheOcean#readme"
+  "homepage": "https://github.com/OmarVenturaP/HackTheOcean#readme",
+  "dependencies": {
+    "concurrently": "^7.2.0"
+  }
 }
