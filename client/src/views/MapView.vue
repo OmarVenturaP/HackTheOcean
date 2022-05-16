@@ -1,49 +1,11 @@
 <template>
+
   <div class="main">
-    <main>
-      <h1 class="h1">Reporte</h1>
-      <div class="reportform">
-        <form action="Enviar" class="formReport">
-          <section class="formReport">
-            <label for="propiedad" name="propiedad" id="propiedad" class="propiedad">Propiedad:</label>
-            <input type="text" name="propiedad" id="propiedad" class="propiedad" placeholder="Propiedad (Pública o Privada)">
-          </section>
-          <section class="formReport">
-            <label for="direccion" name="direccion" id="direccion" class="direccion">Dirección: </label>
-            <input type="text" name="direccion" id="direccion" class="direccion" placeholder="Dirección">
-          </section>
-          <section class="formReport">
-            <label for="municipio" name="municipio" id="municipio" class="municipio">Municipio: </label>
-            <input type="text" name="municipio" id="municipio" class="municipio" placeholder="Municipio">
-          </section>
-          <section class="formReport">
-            <label for="estado" name="estado" id="estado" class="estado">Estado: </label>
-            <input type="text" name="estado" id="estado" class="estado" placeholder="Estado">
-          </section>
-          <section class="formReport">
-            <label for="cp" name="cp" id="cp" class="cp">Código Postal: </label>
-            <input type="number" name="cp" id="cp" class="cp" placeholder="Código Postal">
-          </section>
-          <section class="formReport">
-            <label for="contacto" name="contacto" id="contacto" class="contacto">Teléfono de Contacto: </label>
-            <input type="number" name="contacto" id="contacto" class="contacto" placeholder="Teléfono de Contacto">
-          </section>
-            <section class="formReport">
-            <label  abel for="correo" name="correo" id="correo" class="correo">Correo Electrónico: </label>
-            <input type="email" name="correo" id="correo" class="correo" placeholder="Correo Electrónico">
-            <button type="submit">Enviar</button>
-          </section>
-        </form>
-      </div>
-
-    </main>
-    <div id="map">
-      <MapComponent/>
-    </div>
-
+    <MapComponent/>
   </div>
 
-      <footer>
+
+    <footer>
         <section>
           <a href="#">Home</a>
           <a href="=mailto:sargassum@gmail.com">Correo de contacto</a>
@@ -55,13 +17,14 @@
 
 <script>
 // @ is an alias to /src
+
 import MapComponent from '@/components/MapComponent.vue';
 
 export default {
   name: 'MapView',
-  components: {
+    components: {
     MapComponent,
-  },
+  }
 };
 </script>
 
@@ -87,12 +50,7 @@ export default {
     text-align: center;
     align-items: center;
 }
-#map {
-    position: relative;
-    width: 500px;
-    margin: 0;
-    padding: 0;
-}
+
 footer{
     display: flex;
     flex-direction: row;
