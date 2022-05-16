@@ -30,6 +30,11 @@ const routes = [
     name: 'account',
     component: CuentaView,
   },
+  {
+    path: '/createaccount',
+    name: 'createaccount',
+    component: CreateAccountView
+  }
 ];
 
 const router = createRouter({
