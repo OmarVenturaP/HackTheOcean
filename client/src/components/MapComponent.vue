@@ -22,7 +22,7 @@
       </div>
 
       <div class="results">
-        <p>Direccion</p>
+        <p>Dirección</p>
         <p>
           {{place.address_description}}
         </p>
@@ -81,23 +81,26 @@ export default {
 
 <style>
 .map_holder {
-  width: 200px;
+  position: relative;
+  top: 50px;
+  width: 500px;
   height: 300px;
 }
 .results {
+  position: relative;
   border-radius: 5px;
   border: 2px solid;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  top: -300px;
   width: 500px;
-  margin-left: 800px;
-  margin-top: 180px;
+  height: 50px;
   background-color: rgba(13, 26, 38, 0.807);
   color: white;
 }
 .btn {
-   width: 200px;
+  width: 200px;
 }
 </style>

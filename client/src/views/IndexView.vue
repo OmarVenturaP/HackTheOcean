@@ -1,17 +1,12 @@
 <template>
   <div>
     <main>
-
-      <section class="inicio" id="inicio">
-        <h1 class="header">Sargassum</h1>
-        <video src="./../assets/ocean.mp4" autoplay loop muted></video>
-        <button class="buttonHome">
-          <a href="#">HOME</a>
-        </button>
-      </section>
-
-      <p id="divisor"></p>
-
+        <section class="inicio" id="inicio">
+            <h1 class="header">Sargassum</h1>
+            <video src="./../assets/ocean.mp4" autoplay loop muted></video>
+            <button class="buttonHome"><a href="#divisor">HOME</a></button>
+        </section>
+        <p id="divisor"></p>
       <section class="homepage">
         <h2 class="actualizaciones">Actualizaciones</h2>
         <div>
@@ -24,11 +19,10 @@
                 <a href="#divisor2"><i class="fa-solid fa-angle-down divisor2" ></i></a>
             </div>
         </div>
-
         <p id="divisor2"></p>
 
         <div class="secciones" id="secciones">
-          <div class="seccion" id="seccion1">
+            <div class="seccion" id="seccion1">
             <h3>Problematica</h3>
             <p id="problemtext">Actualmente los metodos para el reporte de sargazo son ya sea a los numeros telefonico
               de la secretaria de marina 01 800 62 74 621 o mediante redes sociales en las cuales la poblacion general
@@ -36,16 +30,14 @@
               es mediante la pagina centralizar las denuncias de sargazo y que estas puedan llegar a empresas privadas
               las cuales se encarguen de la remocion y aprovechamiento del sargazo si estas no pudieran recolectarlo el
               reporte pasaria a gobierno para su recoleccion y eliminacion</p>
-          </div>
-        </div>
-
-        <div class="seccion" id="seccion2">
+            </div>
+            <div class="seccion" id="seccion2">
             <h3>Afectaciones</h3>
             <p id="afectacionestexto">Más allá de que el sargazo puede enredarse en las piernas de los turistas, detiene la oxigenación del agua, cambia a marrón su color turquesa característico en el Caribe y genera gases que huelen mal al entrar en descomposición en las playas.
                 <br>Investigadores de la UNAM aseguran que pone en riesgo al Mar Caribe, pues el entorno físico y la gran diversidad de especies animales y arrecifes coralinos son gravemente afectados.
                 <br>Brigitta Ine van Tussenbroek asegura que el sargazo tiene la capacidad de cambiar los ecosistemas, por lo que en el Caribe "ya es un desastre natural, pues las cantidades de materia orgánica y nutrientes que aporta no tienen precedente. Si esto continúa y no se maneja de manera integral el daño será permanente. El problema es muy grave".
                 <br>Rosa Elisa Rodríguez, otra investigadora del ICML, sostiene que la presencia del sargazo también ha afectado o causado la muerte masiva de 72 especies marinas, como peces y crustáceos, debido a la ausencia de luz y la falta de oxigenación, según el mismo comunicado difundido por la UNAM.</p>
-        </div>
+            </div>
 
         <div class="seccion" id="seccion3">
             <h3>Resultado Final</h3>
@@ -73,7 +65,7 @@
                 <a href="#">REPORTE</a>
             </button>
         </div>
-
+    </div>
         </section>
     </main>
     <footer>
@@ -229,6 +221,7 @@ main > section > video {
 /*Secciones*/
 .secciones {
     width: auto;
+    height: auto;
     margin-left: 170px;
     margin-right: 170px;
     background-color: var(--color-secciones);
