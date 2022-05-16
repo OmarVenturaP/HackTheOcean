@@ -23,10 +23,47 @@ npm run setup
 ```
 
 Create a file called `./server/.env` with the following text inside, replacing the
-required fields (user, password, host, port and database).
+required fields (`user`, `password`, `host`, `port` and `database`).
+
+to use add postgres:
+
+```
+DATABASE_URL="postgresql://USER:PASSWORD@localhost:3306/database?schema=public"
+```
+to use add mysql:
 
 ```
 DATABASE_URL="mysql://USER:PASSWORD@localhost:3306/database"
+```
+*Don't forget to replace `user`, `password`, `host`, `port` and `database`* 
+
+After, ensure db provider is correct in the file called `./server/prisma/schema.prisma`
+
+to use postgres:
+```
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+```
+
+to use mysql:
+```
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+```
+
+Then run the following command, to allow prisma create a migration: 
+```
+cd server
+npx prisma migrate dev --name init
+```
+
+And finally, run seed file to get default records:
+```
+node prisma/seed.js
 ```
 
 Enjoy! :)
@@ -45,12 +82,12 @@ The server will operate with the following API
 
 | Endpoint | Request | Response |
 | -------- | ------- | -------- |
-| `localhost:3000/reports | GET | Get all reports. |
+| `localhost:3000/reports` | GET | Get all reports. |
 | `localhost:3000/reports/:id` | GET | Get report by id. |
 | `localhost:3000/reports` | POST | Create report. JSON data example to send { "name": "Juan", "lastname": "Quiroga", "latitude": 20, "longitude": -10.15, "status": "Open" } |
 | `localhost:3000/reports` | PUT | Send report. JSON data example to send { "name": "Juan", "lastname": "Quiroga", "latitude": 20, "longitude": -10.15, "status": "Open" } |
 | `localhost:3000/reports/:id` | DELETE | Delete report by id. |
-| `localhost:3000/donations | GET | Get all donations. |
+| `localhost:3000/donations` | GET | Get all donations. |
 | `localhost:3000/donations/:id` | GET | Get donation by id. |
 | `localhost:3000/donations` | POST | Creates donation. JSON data example to send { "name": "Juan", "lastname": "Quiroga", "latitude": 20, "longitude": -10.15, "status": "Open" } |
 | `localhost:3000/donations` | PUT | Updates donation. JSON data example to send { "name": "Juan", "lastname": "Quiroga", "latitude": 20, "longitude": -10.15, "status": "Open" } |
