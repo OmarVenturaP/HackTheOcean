@@ -22,6 +22,13 @@ cd HackTheOcean
 npm run setup
 ```
 
+Create a file called `./server/.env` with the following text inside, replacing the
+required fields (user, password, host, port and database).
+
+```
+DATABASE_URL="mysql://USER:PASSWORD@localhost:3306/database"
+```
+
 Enjoy! :)
 
 # Use
@@ -170,4 +177,4 @@ This is an Open Source project. Please feel free to contribute to this project!
 
 # License
 
-This project is licensed by [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html)
+This project is licensed with [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html)
