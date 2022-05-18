@@ -1,0 +1,15 @@
+name: hack the ocean
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  hack_the_ocean:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Echo the message
+        run: |
+          echo "Excelente trabajo!"
+
