@@ -7,7 +7,10 @@
     "client": "cd client && npm run serve",
     "server": "cd server && npm run serve",
     "serve": "concurrently \"npm run client\" \"npm run server\"",
-    "setup": "npm install && cd client && npm install && cd ../server && npm install"
+    "setup": "npm install && cd client && npm install && cd ../server && npm install",
+    "linter": "node ./node_modules/eslint/bin/eslint.js .",
+    "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix"
+
   },
   "repository": {
     "type": "git",
@@ -21,5 +24,8 @@
   "homepage": "https://github.com/OmarVenturaP/HackTheOcean#readme",
   "dependencies": {
     "concurrently": "^7.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0"
   }
 }
