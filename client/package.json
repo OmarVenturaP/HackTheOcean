@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix"
   },
   "dependencies": {
     "axios": "^0.27.2",
@@ -16,7 +17,8 @@
     "vue3-geolocation": "^1.0.0",
     "vue3-google-map": "^0.11.0",
     "vuejs3-google-maps": "^0.2.2",
-    "vuex": "^4.0.0"
+    "vuex": "^4.0.0",
+    "eslint-config-airbnb-base": "^15.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",

@@ -7,7 +7,7 @@ on:
 
 jobs:
   hack_the_ocean:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
         with:
@@ -15,8 +15,4 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 14
-      - name: install dependencias
-        run: npm install
-      - name: esint
-        run: npm run eslint
 

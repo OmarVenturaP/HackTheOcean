@@ -1,5 +1,5 @@
 <template>
-  <div>
+    <div>
     <main>
         <section class="inicio" id="inicio">
             <h1 class="header">Sargassum</h1>
@@ -7,7 +7,7 @@
             <button class="buttonHome"><a href="#divisor">HOME</a></button>
         </section>
         <p id="divisor"></p>
-      <section class="homepage">
+        <section class="homepage">
         <h2 class="actualizaciones">Actualizaciones</h2>
         <div>
             <h3 class="quehacemos">Que estamos haciendo actualmente</h3>
@@ -25,11 +25,11 @@
             <div class="seccion" id="seccion1">
             <h3>Problematica</h3>
             <p id="problemtext">Actualmente los metodos para el reporte de sargazo son ya sea a los numeros telefonico
-              de la secretaria de marina 01 800 62 74 621 o mediante redes sociales en las cuales la poblacion general
-              realiza presion a gobierno para su recoleccion y eliminacion sin aprovechar el material la propuesta
-              es mediante la pagina centralizar las denuncias de sargazo y que estas puedan llegar a empresas privadas
-              las cuales se encarguen de la remocion y aprovechamiento del sargazo si estas no pudieran recolectarlo el
-              reporte pasaria a gobierno para su recoleccion y eliminacion</p>
+                de la secretaria de marina 01 800 62 74 621 o mediante redes sociales en las cuales la poblacion general
+                realiza presion a gobierno para su recoleccion y eliminacion sin aprovechar el material la propuesta
+                es mediante la pagina centralizar las denuncias de sargazo y que estas puedan llegar a empresas privadas
+                las cuales se encarguen de la remocion y aprovechamiento del sargazo si estas no pudieran recolectarlo el
+                reporte pasaria a gobierno para su recoleccion y eliminacion</p>
             </div>
             <div class="seccion" id="seccion2">
             <h3>Afectaciones</h3>
@@ -45,7 +45,7 @@
             <img src="./../assets/recicle.png" alt=""><!--se agrego esta linea-->
             <p>Muchas cosas se pueden fabricar a través de la práctica de reciclar el sargazo: desde calzados, libretas y hasta combustible son algunos de los productos que se han producido para aprovechar la llegada masiva de sargazo a costas de México.</p><!--se agrego esta linea-->
             <button><!--se agrego esta linea-->
-                <a href="./../views/donations.html">DONACIONES</a><!--se agrego esta linea-->
+                <a href="./DonacionesView.vue">DONACIONES</a><!--se agrego esta linea-->
             </button><!--se agrego esta linea-->
         </div>
         <div class="seccion" id="seccion4">
@@ -83,7 +83,7 @@
 <script>
 // @ is an alias to /src
 export default {
-  name: 'IndexView',
+    name: 'IndexView',
 };
 </script>
 <style scoped>
@@ -163,7 +163,7 @@ main button:hover{
     font-size: 90px;
     color:var(--color-secundario);
     text-shadow: 3px 7px 5px var(--color-terciario);
-    padding: 200px 450px;
+    text-align: center;
 }
 main > section > video {
     margin: 0;
